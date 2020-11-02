@@ -1,6 +1,6 @@
 
 //fetch the '/api/workouts/range' route to get all work out data(NOTE: refer '/api/workouts/range' route to apiRoutes.js) 
-//then return the response in a json format and then grab the the JSON as a data to call the populateChart(datat) function
+//then return the response in a JSON format and then grab it as a data to call the populateChart(datat) function
 fetch("/api/workouts/range")
   .then(response => {
     return response.json();
@@ -9,11 +9,10 @@ fetch("/api/workouts/range")
     populateChart(data);
   });
 
-
 API.getWorkoutsInRange()
 
-  function generatePalette() {
-    const arr = [
+function generatePalette() {
+  const arr = [
     "#003f5c",
     "#2f4b7c",
     "#665191",
@@ -31,9 +30,9 @@ API.getWorkoutsInRange()
     "#ff7c43",
     "ffa600"
   ]
-
   return arr;
-  }
+}
+
 function populateChart(data) {
   let durations = duration(data);
   let pounds = calculateTotalWeight(data);
@@ -219,6 +218,6 @@ function workoutNames(data) {
       workouts.push(exercise.name);
     });
   });
-  
+
   return workouts;
 }
