@@ -5,11 +5,11 @@
 var path = require("path");
 
 module.exports = function(app) {
-  // Called when "Countinue Workout" or "new Workout" is clicked in index.html
+  // use the '/stats' route to redirect the user to the exercise.html page
   app.get("/exercise", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/exercise.html"));
   });
-  // Not quite sure what this is used for yet ....
+  // use the '/stats' route to redirect the user to the status.html page .
   app.get("/stats", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/stats.html"));
   });
