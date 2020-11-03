@@ -1,7 +1,7 @@
 # Workout-Tracker
 
 ## Description
-   Workout-Tracker is an app developed for tracking the daily workout activities of a user. This project includes the front end `public files`, the `server files` for routing and conections, and the `mongoDB nnSQL datatabase` for storing users records.
+   Workout-Tracker is an app developed for tracking the daily workout activities of a user. This project includes the front end `public files`, the `server files` for routing and conections, and the `mongoDB noSQL datatabase` for storing user records.
    ## Table of Contents
    * [Installation Instructions](#installation-instructions)
    
